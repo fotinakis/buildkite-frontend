@@ -9,6 +9,7 @@
     "env": "env",
     "start": "NODE_ENV=development webpack-dev-server --config webpack/config.js --progress --colors --cache --inline --hot --host buildkite.dev --port 4890",
     "test": "jest",
+    "test:percy": "FRONTEND_HOST=https://example.com/ EMOJI_HOST=https://example.com/ NODE_ENV=production react-percy --config webpack/config.js",
     "test-with-coverage": "jest --coverage",
     "lint": "eslint .",
     "lint-and-fix": "eslint --fix .",
@@ -18,6 +19,7 @@
     "relay": "relay-compiler --schema app/graph/schema.json --src app"
   },
   "devDependencies": {
+    "@percy-io/react-percy": "^0.2.1",
     "assets-webpack-plugin": "^3.4.0",
     "babel-core": "^6.24.0",
     "babel-eslint": "^7.1.0",
