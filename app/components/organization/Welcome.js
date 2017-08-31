@@ -62,19 +62,21 @@ class Welcome extends React.PureComponent {
   }
 }
 
-export default Relay.createContainer(Welcome, {
-  fragments: {
-    organization: () => Relay.QL`
-      fragment on Organization {
-        slug
-        permissions {
-          pipelineCreate {
-            code
-            allowed
-            message
-          }
-        }
-      }
-    `
-  }
-});
+export default Welcome;
+
+// export default Relay.createContainer(Welcome, {
+//   fragments: {
+//     organization: () => Relay.QL`
+//       fragment on Organization {
+//         slug
+//         permissions {
+//           pipelineCreate {
+//             code
+//             allowed
+//             message
+//           }
+//         }
+//       }
+//     `
+//   }
+// });
