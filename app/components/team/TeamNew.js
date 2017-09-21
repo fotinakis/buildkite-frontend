@@ -10,7 +10,7 @@ import GraphQLErrors from '../../constants/GraphQLErrors';
 import TeamMemberRoleConstants from '../../constants/TeamMemberRoleConstants';
 import TeamPrivacyConstants from '../../constants/TeamPrivacyConstants';
 
-class TeamNew extends React.Component {
+export class TeamNew extends React.Component {
   static propTypes = {
     organization: PropTypes.shape({
       id: PropTypes.string.isRequired,

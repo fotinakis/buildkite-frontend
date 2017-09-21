@@ -15,10 +15,12 @@ globals:
 env:
   es6: true
   browser: true
+  'react-percy/globals': true
 
 plugins:
   - import
   - react
+  - react-percy
 
 ecmaFeatures:
   modules: true
