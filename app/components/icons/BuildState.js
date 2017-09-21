@@ -32,7 +32,7 @@ const STATE_COLORS = {
   [BuildStates.NOT_RUN]: '#83B0E4'
 };
 
-class BuildState extends React.PureComponent {
+export class BuildState extends React.PureComponent {
   static propTypes = {
     className: PropTypes.string,
     size: PropTypes.number.isRequired,

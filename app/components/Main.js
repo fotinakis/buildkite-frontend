@@ -7,7 +7,7 @@ import Navigation from './layout/Navigation';
 import Footer from './layout/Footer';
 import Flashes from './layout/Flashes';
 
-class Main extends React.PureComponent {
+export class Main extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
     viewer: PropTypes.object.isRequired,
